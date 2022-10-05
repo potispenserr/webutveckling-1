@@ -1,0 +1,175 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 12 Sept 2022, 17:36:40
+*/
+
+body {
+  background-color: white;
+  height: 100%;
+}
+
+
+
+header {
+  background-color: black;
+  min-height: 6em;
+}
+
+nav {
+  background-color: grey;
+  min-height: 3em;
+  float:left;
+  width:100%;
+  background:yellow;
+  font-size:93%;
+  line-height:normal;
+}
+
+nav ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+nav li{
+  float:left;
+  margin:0;
+  padding:0;
+}
+
+nav ul li a{
+  transition: font-size 0.5s;
+}
+nav ul li a:hover {
+  /*padding-top: 2px;*/
+  font-size: 20pt;
+  
+}
+
+nav ul li a:link {
+  color: blue;
+}
+
+nav ul li a:visited {
+    color: red;
+  
+}
+
+nav ul li a:hover {
+    color: #000;
+    cursor: not-allowed;
+  
+}
+
+nav a {
+  display:block;
+  padding:5px 15px;
+  border-style: solid;
+  border-color: black;
+}
+
+nav #current a{
+  border-style: solid;
+  border-color: white;
+}
+
+
+section {
+  background-color: lightblue;
+  width: 60%;
+  float: left;
+  overflow: hidden;
+}
+
+
+
+main header {
+  background-color: lightgreen;
+  min-height: 3em;
+  display: block;
+  clear: both;
+  overflow:auto;
+  
+}
+
+article {
+  background-color: white;
+  overflow: hidden;
+}
+
+main footer {
+  background-color: lightgreen;
+  min-height: 3em;
+}
+
+aside {
+  
+  background-color:#9999ff;
+  width: 30%;
+  float: right;
+  min-height: 20em;
+}
+
+
+
+footer {
+    
+  background-color:#c45a00;
+  clear: both;
+  min-height: 6em;
+}
+
+h1 {
+  color: #ff0099;
+  font-family:fantasy;
+  letter-spacing: -1px;
+}
+
+a {
+  background-color: white;
+}
+
+ul {
+  list-style: square outside none;
+}
+
+ol {
+  list-style: upper-roman outside none;
+}
+
+table {
+  border: 1px solid black;
+  table-layout: auto;
+}
+td, th {
+  border: 1px solid black;
+}
+
+figure{
+  height: fit-content;
+}
+
+figure img {
+  float: left;
+}
+
+input:focus {
+  background-color:#999999;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  border: 2px solid #ffcabc;
+  border-radius: 4px;
+  background-image: url('formicon.png');
+  background-position: left; 
+  padding-left: 3%;
+  background-repeat: no-repeat;
+}
+
+textarea{
+  resize: none;
+}
+
