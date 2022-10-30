@@ -1,6 +1,6 @@
 
 const heading = document.getElementById("mouseclick");
-
+//displays the coords where the mouse clicked
 function showcoords(event) {
   let x = event.pageX;
   let y = event.pageY;
@@ -12,7 +12,7 @@ function showcoords(event) {
 
 heading.addEventListener("click", showcoords);
 
-
+//removes the eventlistener for the h2 tag
 function removeEvent() {
     heading.removeEventListener("click", showcoords);
 }

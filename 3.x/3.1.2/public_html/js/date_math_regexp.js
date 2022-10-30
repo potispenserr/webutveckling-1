@@ -2,6 +2,7 @@ var dateInterval;
 
 var timeout;
 
+//window onload function that shows the time, adds numbers, searches a string, displays an alert
 window.onload = function(){ 
     dateInterval = setInterval(displayTime, 1000);
     
@@ -22,20 +23,24 @@ window.onload = function(){
     
 };
 
+// function for updating the time on an interval 
 function displayTime() {
     const datenow = new Date();
     document.getElementById("date").innerHTML = datenow;
 }
 
+//displays text on a timeout
 function displayTimeout() {
     document.getElementById("timeoutp").innerHTML = "TIMEOUT!!!";
 }
 
+//stops timeout
 function dostopTimeoutbutton() {
     window.clearTimeout(timeout);
     
 }
 
+//stops interval
 function dostopIntervalbutton() {
     window.clearInterval(dateInterval);
     

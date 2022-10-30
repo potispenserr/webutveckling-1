@@ -1,3 +1,4 @@
+//window onload function that shows the time, adds numbers and searches a string
 window.onload = function(){ 
     const datenow = new Date();
     document.getElementById("date").innerHTML = datenow;
