@@ -1,0 +1,81 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0. 9);
+}
+
+.modalContent {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;   
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.modalContent, #caption {  
+    -webkit-animation-name: zoomin;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoomin;
+    animation-duration: 0.6s;
+}
+
+.modalClose {
+    -webkit-animation-name: zoomout;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoomout;
+    animation-duration: 0.6s;
+}
+
+.close:hover, .close:focus{
+    color: #bbb;
+    cursor: pointer;
+}
+  
+  @-webkit-keyframes zoomin {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+  @keyframes zoomin {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+  @-webkit-keyframes zoomout {
+    from {-webkit-transform:scale(1)} 
+    to {-webkit-transform:scale(0)}
+}
+  
+  @keyframes zoomout {
+    from {transform:scale(1)} 
+    to {transform:scale(0)}
+}

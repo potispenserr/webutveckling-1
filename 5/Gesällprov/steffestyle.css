@@ -1,0 +1,289 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 12 Sept 2022, 17:36:40
+*/
+
+body {
+  background-color: #ccc;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+header {
+  min-height: 6em;
+}
+
+header p{
+  padding: 3px;
+}
+
+p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+}
+
+h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#topheader {
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin: 0 auto;
+
+}
+#topheader h1 {
+  color:black;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  vertical-align:middle;
+  display: inline-block;
+
+}
+#topheader span {
+  line-height: 100%;
+}
+
+#highlight {
+  background-color: #000;
+	color: #fff;
+	display: inline-block;
+	padding-left: 8px;
+	padding-right: 8px;
+	text-align: center
+}
+
+nav {
+  background-color: #ccc;
+  min-height: 3em;
+  float:left;
+  width:100%;
+  font-size:93%;
+  line-height:normal;
+}
+
+nav ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+nav li{
+  float:left;
+  margin:0;
+  padding:0;
+}
+
+nav ul li a{
+  transition: font-size 0.5s;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav ul li a:hover {
+  /*padding-top: 2px;*/
+  font-size: 18pt;
+  
+}
+
+
+
+
+
+nav ul li a:hover {
+    color: #000;
+    cursor: pointer;
+  
+}
+
+nav a {
+  display:block;
+  padding:5px 15px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  background-color: #ccc;
+  color: #000;
+}
+
+nav #current a{
+  border-style: solid;
+  border-color: #ccc;
+}
+
+
+section {
+  background-color: lightblue;
+  width: 60%;
+  float: left;
+  overflow: hidden;
+}
+
+
+
+.flex-container {
+  widows: auto;
+  height: auto;
+  display: table;
+}
+
+.leftcontainer {
+  float: left;
+  margin: 10px;
+  width: 60%;
+}
+
+.rightcontainer {
+  float: left;
+  margin: 10px;
+  width: 33%;
+
+}
+
+
+main {
+  margin-left: auto;
+	margin-right: auto;
+  max-width: 1400px
+}
+
+main header {
+  background-color: lightgreen;
+  min-height: 3em;
+  display: block;
+  clear: left;
+  overflow:auto;
+  
+}
+
+article {
+  background-color: rgba(255, 255, 255, 0.486);
+  overflow: hidden;
+  padding: 5px;
+}
+
+
+main footer {
+  background-color: lightgreen;
+  min-height: 3em;
+}
+
+aside {
+  
+  background-color:#9999ff;
+  width: 30%;
+  float: right;
+  min-height: 20em;
+}
+
+
+
+footer {
+    
+  background-color:#c45a00;
+  clear: both;
+  min-height: 6em;
+}
+
+main h1 {
+  color: #000000;
+  font-family:fantasy;
+  letter-spacing: -1px;
+  padding-left: 5px;
+}
+
+
+
+
+ul {
+  list-style: square outside none;
+}
+
+ol {
+  list-style: upper-roman outside none;
+}
+
+table {
+  border: 1px solid black;
+  table-layout: auto;
+}
+td, th {
+  border: 1px solid black;
+}
+
+figure{
+  height: fit-content;
+}
+
+
+
+input:focus {
+  background-color:#999999;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  border: 2px solid #ffcabc;
+  border-radius: 4px;
+  background-image: url('media/formicon.png');
+  background-position: left; 
+  padding-left: 3%;
+  background-repeat: no-repeat;
+}
+
+textarea{
+  resize: none;
+}
+
+#painting {
+    transform: rotate(25deg);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#rotate:hover {
+  opacity: 0.7;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  float: left;
+  width: auto;
+  height: auto;
+  margin: 16px;
+  box-sizing: inherit;
+  content: "";
+display: table;
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  float: left;
+  width: auto;
+  margin: 16px;
+  box-sizing:content-box;
+  content: "";
+  display:block;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+  content: "";
+display: table;
+clear: none;
+  
+}
+
