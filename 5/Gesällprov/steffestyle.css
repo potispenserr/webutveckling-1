@@ -7,7 +7,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 */
 
 body {
-  background-color: #ccc;
+  background-color: rgb(233, 233, 233);
   height: 100%;
   width: 100%;
 }
@@ -37,6 +37,7 @@ h2 {
   padding-top: 16px;
   padding-bottom: 16px;
   margin: 0 auto;
+  cursor: pointer;
 
 }
 #topheader h1 {
@@ -44,6 +45,7 @@ h2 {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   vertical-align:middle;
   display: inline-block;
+  font-size: 60pt;
 
 }
 #topheader span {
@@ -114,9 +116,15 @@ nav #current a{
   border-color: #ccc;
 }
 
+.mainheader {
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin: 0 auto;
+}
 
 section {
-  background-color: lightblue;
+  background-color: rgb(233, 233, 233);
   width: 60%;
   float: left;
   overflow: hidden;
@@ -124,7 +132,7 @@ section {
 
 
 
-.flex-container {
+.main-container {
   widows: auto;
   height: auto;
   display: table;
@@ -151,7 +159,7 @@ main {
 }
 
 main header {
-  background-color: lightgreen;
+  background-color: rgb(223, 255, 181);
   min-height: 3em;
   display: block;
   clear: left;
@@ -160,9 +168,55 @@ main header {
 }
 
 article {
-  background-color: rgba(255, 255, 255, 0.486);
+  background-color: rgb(167, 255, 240);
   overflow: hidden;
-  padding: 5px;
+  padding: 16px;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: hidden;
+  border: 0;
+	border-top: 1px solid rgb(203, 208, 209);;
+	margin: 20px 0
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.buttonB {
+  background-color: rgb(223, 255, 181);
+  color: black;
+  border: 2px solid #555555;
+}
+
+.buttonC {
+  background-color: #ffd1db;
+  color: black;
+  border: 2px solid #555555;
+}
+
+
+.buttonB:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.buttonC:hover {
+  background-color: #555555;
+  color: white;
 }
 
 
@@ -173,7 +227,7 @@ main footer {
 
 aside {
   
-  background-color:#9999ff;
+  background-color:#ffd1db;
   width: 30%;
   float: right;
   min-height: 20em;
@@ -183,10 +237,21 @@ aside {
 
 footer {
     
-  background-color:#c45a00;
+  background-color:#312f2c;
   clear: both;
   min-height: 6em;
 }
+
+footer p {
+  padding: 25px;
+}
+
+footer a{
+  color: white;
+
+}
+
+
 
 main h1 {
   color: #000000;
@@ -214,9 +279,13 @@ td, th {
   border: 1px solid black;
 }
 
-figure{
-  height: fit-content;
+figure img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  overflow: hidden;
 }
+
 
 
 
@@ -280,8 +349,8 @@ display: table;
 }
 
 .container {
-  padding: 2px 16px;
-  content: "";
+padding: 2px 16px 16px;
+content: "";
 display: table;
 clear: none;
   

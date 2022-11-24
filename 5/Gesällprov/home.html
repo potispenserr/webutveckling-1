@@ -16,25 +16,17 @@
         
     </head>
     <body>
-        <header id="topheader">
-            <span></span>
-            <h1>
-                Steffes Nöjeshåla
-            </h1>
-            <p>Välkommen till <span id="highlight">Steffes</span> blogg</p>
-        </header>
-        
-        <nav>
-            <ul>
-                <li id="current"><a href="home.html"> Home </a></li>
-                <li><a href="history.html"> History </a></li>
-                <li><a href="now.html"> Now </a></li>
-            </ul>
-            
-            
-        </nav>
+        <a href="home.html">
+            <header id="topheader">
+                <span></span>
+                <h1>
+                    Steffes Nöjeshåla
+                </h1>
+                <p>Välkommen till <span id="highlight">Steffes</span> blogg</p>
+            </header>
+        </a>
         <main>
-            <div class="flex-container">
+            <div class="main-container">
                 <div class="leftcontainer">    
                     <header class="card">
                         <div class="container">
@@ -43,6 +35,10 @@
     
                             <p> Under en tid var Steffe en kock och han reste också för att uppleva världens mat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     
+                        </div>
+                        <div class="container">
+                            <a href="history.html"><button class="button buttonB"> Läs mer här</button></a>
+
                         </div>
                         
                     </header>
@@ -55,93 +51,87 @@
                         <p>Nu för tiden spenderar Steffe mycket tid på att måla. Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed. Ultrices eros in cursus turpis massa tincidunt dui ut.</p>
     
                         </div>
-                        
-                    </header>
-                    
-                    <header class="card">
                         <div class="container">
-                            <h1>Framtida hobbies och intressen</h1>
-    
-                            <p>Steffe har under en lång tid planerat på att börja jaga. Adipiscing bibendum est ultricies integer quis auctor elit. Ut venenatis tellus in metus vulputate. Accumsan lacus vel facilisis volutpat est velit egestas dui id. </p>
+                            <a href="now.html"><button class="button buttonB"> Läs mer här</button></a>
+
                         </div>
                         
                     </header>
-    
-                    
-                    
-                    <section class="card">
+
+                    <article class="card">
                         <div class="container">
-                            <h1>
+                            <h2>
                                 Frågor för Steffe
-                            </h1>
-                            <article>
-                                
-                                <form method="post" enctype="multipart/form-data" action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php">
-                                    <fieldset>
-                                        <legend>Kontakt info</legend>
-                                        <label for="name"> Namn: </label> <input type="text" size="15"  maxlength="30" name="name" id="name"/>
-                                        <p> 
-                                            Email: <input type="email" name="email"/>
-                                        </p>
-                                        <p> 
-                                            Hemsida: <input type="url" name="website"/>
-                                        </p>
-                                        <p> 
-                                            Lösenord?: <input type="password" name="password"/>
-                                        </p>
-                                        <p> 
-                                            Nummer: <input type="number" name="number" min="3" max="36" step="2.3"/>
-                                        </p>
-                                        <p> 
-                                            Tid och Datum: <input type="datetime-local" name="datetime"/>
-                                        </p>
-                
-                                        <label for="checkanswer">Vill du att Steffe ska svara?:</label> <input type="checkbox" name="checkforanswer" id="checkanswer"/>
-                
-                                        <p> Vill du ha kopia på ditt meddelande? 
-                                        <input type="radio" id="ja" name="answer" value="ja" >
-                                        <label for="ja">Ja</label>
-                                        <input type="radio" id="nej" name="answer" value="nej">
-                                        <label for="nej">Nej</label>
-                
-                                        <p>
-                                            Meddelande
-                                        </p>
-                                        <textarea name="comments" cols="20" rows="4"> Skriv här
-                                        </textarea>
-                                        <br>
-                                        <label for="myfile">Övriga klagomål kan laddas upp här:</label>
-                                        <input type="file" id="myfile" name="myfile"><br><br>
-                                        <input type="submit" value="Skicka">
-                
-                                    
-                                    </fieldset>
-                                </form>
+                            </h2>
+                        
+                        <form method="post" enctype="multipart/form-data" action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php">
+                            <fieldset>
+                                <legend>Kontakt info</legend>
+                                <label for="name"> Namn: </label> <input type="text" size="15"  maxlength="30" name="name" id="name"/>
+                                <p> 
+                                    Email: <input type="email" name="email"/>
+                                </p>
+                                <p> 
+                                    Hemsida: <input type="url" name="website"/>
+                                </p>
+                                <p> 
+                                    Lösenord?: <input type="password" name="password"/>
+                                </p>
+                                <p> 
+                                    Nummer: <input type="number" name="number" min="3" max="36" step="2.3"/>
+                                </p>
+                                <p> 
+                                    Tid och Datum: <input type="datetime-local" name="datetime"/>
+                                </p>
         
-                            </article>
-                        </div>
+                                <label for="checkanswer">Vill du att Steffe ska svara?:</label> <input type="checkbox" name="checkforanswer" id="checkanswer"/>
+        
+                                <p> Vill du ha kopia på ditt meddelande? 
+                                <input type="radio" id="ja" name="answer" value="ja" >
+                                <label for="ja">Ja</label>
+                                <input type="radio" id="nej" name="answer" value="nej">
+                                <label for="nej">Nej</label>
+        
+                                <p>
+                                    Meddelande
+                                </p>
+                                <textarea name="comments" cols="20" rows="4"> Skriv här
+                                </textarea>
+                                <br>
+                                <label for="myfile">Övriga klagomål kan laddas upp här:</label>
+                                <input type="file" id="myfile" name="myfile"><br><br>
+                                <input type="submit" value="Skicka">
+        
                             
-                    </section>
+                            </fieldset>
+                        </form>
+
+                        </div>
+                    </article>
+                    </div>
+                    <div class="rightcontainer">
+                        <aside class="card2">
+                            <figure>
+                                <img src="media/steffe.jpg" alt="Steffe">
+                                <figcaption> Bild av Steffe tagen från <a href="https://this-person-does-not-exist.com/en">This person does not exist</a> </figcaption>
+                            </figure>
+                            <div class="container">
+                                
+                                <h2>
+                                    Steffe Steffeson?
+                                </h2> 
+                                <p>
+                                    Hej hej på er allihopa det är jag som är Steffe hoppas att ni kommer ha det kul att titta på min webbsida. <br>
+                                    Jag absolut älskar duis aute irure dolor in reprehenderit, det är verkligen min favorit. 
+                                </p>
+                
+                            </div>
+                        </aside>
+                    </div>
+                            
             </div>
     
-            <div class="rightcontainer">
-                <aside class="card2">
-                    <div class="container">
-                        <figure>
-                            <img src="media/steffe.jpg" alt="Steffe" width="100%">
-                            <figcaption> Bild av Steffe tagen från <a href="https://this-person-does-not-exist.com/en">This person does not exist</a> </figcaption>
-                        </figure>
-                        <h2>
-                            Steffe Steffeson?
-                        </h2> 
-                        <p>
-                            Hej hej på er allihopa det är jag som är Steffe hoppas att ni kommer ha det kul att titta på min webbsida. <br>
-                            Här får ni mer oanvändbar info Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
-                        </p>
-        
-                    </div>
-                </aside>
-            </div>
+            
 
             </div>
             
@@ -167,9 +157,9 @@
     
         
         <footer>
-            <pre>
+            <p>
                 <a href="mailto:ruwi7035@student.su.se">Ruben 2022</a>
-            </pre>
+            </p>
         </footer>
         
     </body>
