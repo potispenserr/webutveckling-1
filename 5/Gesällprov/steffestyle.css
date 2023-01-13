@@ -1,10 +1,4 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
-*/
-/* 
-    Created on : 12 Sept 2022, 17:36:40
-*/
+
 
 body {
   background-color: rgb(233, 233, 233);
@@ -62,59 +56,36 @@ h2 {
 }
 
 nav {
-  background-color: #ccc;
-  min-height: 3em;
-  float:left;
-  width:100%;
-  font-size:93%;
-  line-height:normal;
-}
-
-nav ul {
-  margin:0;
-  padding:0;
-  list-style:none;
-}
-nav li{
-  float:left;
-  margin:0;
-  padding:0;
-}
-
-nav ul li a{
-  transition: font-size 0.5s;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-nav ul li a:hover {
-  /*padding-top: 2px;*/
-  font-size: 18pt;
-  
-}
-
-
-
-
-
-nav ul li a:hover {
-    color: #000;
-    cursor: pointer;
-  
+  width: 93%;
+  overflow: hidden;
+  background-color: black;
+  margin: 16px;
+  border: #000;
+  border-style: solid;
 }
 
 nav a {
-  display:block;
-  padding:5px 15px;
-  border-style: solid;
-  border-color: black;
-  border-radius: 5px;
-  background-color: #ccc;
-  color: #000;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
-nav #current a{
-  border-style: solid;
-  border-color: #ccc;
+nav a:hover {
+  background-color: rgb(233, 233, 233);
+  color: black;
 }
+
+nav #current {
+  background-color: rgb(233, 233, 233);
+  color: black;
+}
+
 
 .mainheader {
   text-align: center;
@@ -297,7 +268,6 @@ input[type=text] {
   box-sizing: border-box;
   border: 2px solid #ffcabc;
   border-radius: 4px;
-  background-image: url('media/formicon.png');
   background-position: left; 
   padding-left: 3%;
   background-repeat: no-repeat;
@@ -354,5 +324,10 @@ content: "";
 display: table;
 clear: none;
   
+}
+
+.center_container {
+  width: 600px;
+  margin: 0 auto;
 }
 
