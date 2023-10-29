@@ -1,23 +1,22 @@
 var timeoutHolder;
 
-var timeoutIndex = 0;
+var timeoutIndex = 1;
 
 picInterval = setTimeout(picTimeout, 3000);
 
 //function that handles the timeout
 function picTimeout() {
-    console.log("timeout");
-    $("#timeoutPic").fadeOut("slow", function(){
-        let picture = document.getElementById("timeoutPic");
+    $(".bgimg1").fadeOut("slow", function(){
+        let picture = document.getElementsByClassName("bgimg1");
         if(timeoutIndex === 0){
-            picture.src = "media/crane.jpg";
+            picture[0].style.backgroundImage = "url(media/parallax.jpg)";
             timeoutIndex = 1;
             return;
         }
-        picture.src = "media/beach.jpg";
+        picture[0].style.backgroundImage = "url(media/parallax4.jpg)";
         timeoutIndex = 0;
 
       });
-    $("#timeoutPic").fadeIn("slow", "swing");
+    $(".bgimg1").fadeIn("fast", "swing");
     timeoutHolder = setTimeout(picTimeout, 3000);
 }

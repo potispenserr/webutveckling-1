@@ -9,7 +9,13 @@
     height: 100%;
     overflow: auto;
     background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0. 9);
+    background-color: rgba(0, 0, 0, 0.9);
+    
+}
+
+.clickableImg:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 .modalContent {
@@ -19,7 +25,7 @@
     max-width: 700px;   
 }
 
-#caption {
+.modalCaption {
     margin: auto;
     display: block;
     width: 80%;
@@ -41,7 +47,7 @@
     transition: 0.3s;
 }
 
-.modalContent, #caption {  
+.modalContent, .modalCaption {  
     -webkit-animation-name: zoomin;
     -webkit-animation-duration: 0.6s;
     animation-name: zoomin;
